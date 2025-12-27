@@ -1,1 +1,75 @@
-Hola Mundo :D
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenida</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-black via-zinc-950 to-zinc-900 text-zinc-100">
+  <main class="min-h-screen flex items-center justify-center p-6">
+    <section class="w-full max-w-2xl rounded-3xl border border-zinc-800/70 bg-zinc-950/60 backdrop-blur-xl shadow-2xl">
+      <div class="p-8 sm:p-10">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-purple-600/15 ring-1 ring-purple-500/30">
+            <svg class="h-5 w-5 text-purple-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l1.6 4.8L18 8.4l-4.4 1.6L12 15l-1.6-5L6 8.4l4.4-1.6L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 14l.9 2.7L9 17.8l-3.1 1.1L5 22l-.8-3.1L1 17.8l3.2-1.1L5 14z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+              <path d="M19 13l.8 2.4L22 16.2l-2.2.8L19 19.5l-.6-2.5-2.4-.8 2.4-.8L19 13z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+            </svg>
+          </span>
+
+          <p class="text-sm tracking-wide text-zinc-400">
+            Minimal • Oscuro • Morado
+          </p>
+        </div>
+
+        <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight">
+          Bienvenido<span class="text-purple-300">.</span>
+        </h1>
+
+        <p class="mt-4 text-zinc-300 leading-relaxed">
+          Esta es tu página de bienvenida con un estilo minimalista y moderno.
+          Todo listo para empezar: limpio, oscuro y con un toque morado elegante.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#"
+             class="inline-flex items-center justify-center rounded-2xl bg-purple-600 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-purple-600/20 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-400/60">
+            Empezar
+          </a>
+
+          <a href="#"
+             class="inline-flex items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-950/40 px-5 py-3 text-sm font-medium text-zinc-200 hover:border-purple-500/40 hover:text-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400/40">
+            Ver más
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div class="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-4">
+            <p class="text-xs text-zinc-400">Estado</p>
+            <p class="mt-1 font-medium text-zinc-100">Listo ✅</p>
+          </div>
+          <div class="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-4">
+            <p class="text-xs text-zinc-400">Tema</p>
+            <p class="mt-1 font-medium text-purple-200">Oscuro + Morado</p>
+          </div>
+          <div class="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-4">
+            <p class="text-xs text-zinc-400">Diseño</p>
+            <p class="mt-1 font-medium text-zinc-100">Minimalista</p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="flex items-center justify-between border-t border-zinc-800/60 px-8 py-5 text-xs text-zinc-500">
+        <span>© <span id="year"></span> Tu Sitio</span>
+        <span class="text-zinc-600">Hecho con Tailwind</span>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
